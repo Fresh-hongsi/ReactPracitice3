@@ -1,46 +1,46 @@
 /* src/styles/Register.css */
 .register-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff; /* 배경색을 로그인과 맞춤 */
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* 배경색을 로그인과 맞춤 */
 }
 
 .register-container h2 {
-    text-align: center;
-    margin-bottom: 50px; /* 로그인 페이지와 같은 간격으로 조정 */
-    color: #333;
+  text-align: center;
+  margin-bottom: 50px; /* 로그인 페이지와 같은 간격으로 조정 */
+  color: #333;
 }
 
 .register-container form {
-    display: flex;
-    flex-direction: column; /* 입력 필드들을 세로로 정렬 */
+  display: flex;
+  flex-direction: column; /* 입력 필드들을 세로로 정렬 */
 }
 
 .register-container input {
-    margin-bottom: 15px; /* 입력 필드 간격 조정 */
-    padding: 10px;
-    border: 1px solid #ccc; /* 테두리 추가 */
-    border-radius: 4px;
-    font-size: 16px;
+  margin-bottom: 15px; /* 입력 필드 간격 조정 */
+  padding: 10px;
+  border: 1px solid #ccc; /* 테두리 추가 */
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .register-container input:focus {
-    border-color: #007bff; /* 포커스 시 테두리 색상 */
-    outline: none;
+  border-color: #007bff; /* 포커스 시 테두리 색상 */
+  outline: none;
 }
 
 .register-container button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: black; /* 버튼 색상 */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: black; /* 버튼 색상 */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .register-container button:hover {
-    background-color: #0056b3; /* 버튼 호버 색상 */
+  background-color: #0056b3; /* 버튼 호버 색상 */
 }
