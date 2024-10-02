@@ -1,0 +1,6 @@
+.product-detail__image {
+    width: 100%; /* 부모 요소의 너비에 맞게 조정 */
+    height: auto; /* 비율을 유지하면서 높이를 자동으로 조정 */
+    max-width: 400px; /* 최대 너비를 설정 (예: 400px) */
+    margin: 0 auto; /* 가운데 정렬 */
+  }

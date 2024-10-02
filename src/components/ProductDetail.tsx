@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../styles/ProductDetail.css";
 interface Product {
   id: number;
   name: string;
@@ -84,7 +85,7 @@ const ProductDetail: React.FC = () => {
   }
   const inCart = cartItems.some((item) => item.id === product.id);
   return (
-    <div className="product-detail">
+    <div className="ProductDetail">
       <h2>{product.name}</h2>
       <img
         src={product.imageUrl}
