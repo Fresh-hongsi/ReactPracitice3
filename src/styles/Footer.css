@@ -1,4 +1,4 @@
-/* Footer.css */
+/* Footer.css
 .footer {
   background-color: #f1f2f2;
   padding: 20px;
@@ -15,4 +15,47 @@
   margin: 0 10px;
   text-decoration: none;
   color: #333;
+} */
+
+/* Footer.css */
+.footer {
+  background-color: #111;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer__info,
+.footer__customer-service,
+.footer__social-media {
+  margin-bottom: 20px;
+}
+
+.footer__info p,
+.footer__customer-service p,
+.footer__customer-service h4 {
+  color: #ccc;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer__customer-service h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer__social-media a {
+  margin: 5 10px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer__social-media a:hover {
+  color: #f1f1f1;
+}
+
+.footer__social-media a::before {
+  content: "🌐 ";
 }

@@ -1,5 +1,5 @@
-// src/components/MainContent.tsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/MainContent.css";
 
 interface Product {
@@ -22,7 +22,12 @@ const sampleProducts: Product[] = [
     price: 75000,
     imageUrl: "https://via.placeholder.com/300x400?text=Item+2",
   },
-  // 더미 데이터 추가
+  {
+    id: 3,
+    name: "패션 아이템 3",
+    price: 25000,
+    imageUrl: "https://via.placeholder.com/300x400?text=Item+3",
+  },
 ];
 
 const MainContent: React.FC = () => {
@@ -31,13 +36,13 @@ const MainContent: React.FC = () => {
       <h2>신상품</h2>
       <div className="product-grid">
         {sampleProducts.map((product) => (
-          <div className="product-card" key={product.id}>
+          <Link to={`/product/${product.id}`} className="product-card" key={product.id}>
             <img src={product.imageUrl} alt={product.name} />
             <h3 className="product-card__name">{product.name}</h3>
             <p className="product-card__price">
               {product.price.toLocaleString()}원
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </main>

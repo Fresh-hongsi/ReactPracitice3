@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import logo from '../img/mainImg.png';
 
 const Header: React.FC = () => {
   return (
@@ -12,16 +13,11 @@ const Header: React.FC = () => {
         <div className="header__logo">
           <Link to="/">
             <img
-              src="https://via.placeholder.com/150x50?text=Logo"
+              src={logo}
               alt="Logo"
+              className="header__logo-img"
             />
           </Link>
-        </div>
-
-        {/* 검색창 */}
-        <div className="header__search">
-          <input type="text" placeholder="검색어를 입력하세요" />
-          <button type="submit">검색</button>
         </div>
 
         {/* 사용자 메뉴 */}
@@ -31,6 +27,13 @@ const Header: React.FC = () => {
           <Link to="/cart">장바구니</Link>
         </div>
       </div>
+
+      {/* 검색창 */}
+      <div className="header__search">
+          <input type="text" placeholder="검색어를 입력하세요" />
+          <button type="submit">검색</button>
+        </div>
+        
 
       {/* 네비게이션 메뉴 */}
       <nav className="header__nav">
